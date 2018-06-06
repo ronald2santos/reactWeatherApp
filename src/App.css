@@ -20,13 +20,21 @@ input[type=text]:focus {
 }
 
 button[type=submit] {
-  background: black;
+  background: rgba(0, 78, 93, 1);
   color: white;
   height: 38px;
   width: 100px;
   font: bold 15px arial, sans-serif;
   text-shadow: black;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.9);
+}
+
+button:hover {background-color: #031925}
+
+button:active {
+  background-color: #041c30;
+  box-shadow: 0 5px rgb(7, 7, 7);
+  transform: translateY(5px);
 }
 
 .weather-card {

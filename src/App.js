@@ -120,7 +120,7 @@ class App extends Component {
                     <span className="deg">0</span>
                     <a href="javascript:;"><span className="temp-type">C</span></a>
                     <h6 className="description">{this.state.description}</h6>
-                    <h6>{this.state.errorMsg}</h6>
+                    <h6 style={{color : "white"}}>{this.state.errorMsg}</h6>
                   </p> </div>}
               </div>
             </div>
