@@ -67,9 +67,14 @@ class App extends Component {
           weather : data.weather[0].main,
           description: data.weather[0].description,
           icon : data.weather.icon,
-          loading: false
+          loading: false,
+          errorMsg: ''
         });
-    }.bind(this));
+    }.bind(this)).catch(function(error){
+      this.setState({
+        loading: false,
+        errorMsg: "Please, enter a valid city"
+      })}.bind(this));
   }
 
     
@@ -115,6 +120,7 @@ class App extends Component {
                     <span className="deg">0</span>
                     <a href="javascript:;"><span className="temp-type">C</span></a>
                     <h6 className="description">{this.state.description}</h6>
+                    <h6>{this.state.errorMsg}</h6>
                   </p> </div>}
               </div>
             </div>
