@@ -7,8 +7,8 @@ A weather app card using Reactjs and Nodejs, with the OpenWeatherMap API. It tak
 
 ## Current Features
 
-- Selection by City Name (future autocomplete GoogleMaps API integration)
-- Dynamic gif background (dependin on current weather conditions)
+- Selection by City Name (future autocomplete/suggestions integration)
+- Dynamic gif background (depending on current weather conditions)
 - Loading state SVG animation.
 - CSS animations and card style.
 
